@@ -66,7 +66,7 @@ Example:
 
 */
 let num1 = prompt("Enter the value of num1"), num2 = prompt("Enter the value of num2");
-if(num1=="" ||num1==undefined ||num1==true ||num2=="" ||num2==undefined ||num2==true)
+if(isNaN(num1) || isNaN(num2) || num1=="" || num2=="")
 {
     alert("Enter a valid value");
 }
